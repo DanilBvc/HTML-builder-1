@@ -12,7 +12,7 @@ fs.readdir(path.join(__dirname, 'styles'), (err, data) => {
                 fs.writeFile(path.join(__dirname, 'project-dist','bundle.css'), styleContent , (err) => {
                     if(err) throw err
                     const datav = Buffer.from(styleContent);
-                    fs.appendFile(path.join(__dirname, 'project-dist', 'bundle.css'), datav + '', (errr) => {
+                    fs.appendFile(path.join(__dirname, 'project-dist', 'bundle.css'), datav + ';', (errr) => {
                       if(errr) {
                         throw errr;
                       }
