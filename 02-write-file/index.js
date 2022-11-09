@@ -2,7 +2,7 @@ const fs = require('fs');
 const { stdin, stdout } = process;
 stdout.write('Enter some text\n')
 stdin.on('data', (data) => {
- if( (/exit/gi).test(data.toString())){ 
+ if((/exit/gi).test(data.toString())){ 
   console.log('Bye')
   process.exit()
  }
