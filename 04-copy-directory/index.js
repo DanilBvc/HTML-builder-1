@@ -1,5 +1,4 @@
 const fs = require('fs/promises');
-const { copyFile } = require('fs/promises');
 const path = require('path');
 
 (async() => {
